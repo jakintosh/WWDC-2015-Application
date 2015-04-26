@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21561E1C1AED608B0035E714 /* zoom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 21561E1B1AED608B0035E714 /* zoom.wav */; };
+		21561E1E1AED74EE0035E714 /* MenuOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21561E1D1AED74EE0035E714 /* MenuOptionButton.swift */; };
 		21EC641B1AE9E59A0070FA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC641A1AE9E59A0070FA67 /* AppDelegate.swift */; };
-		21EC641F1AE9E59A0070FA67 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC641E1AE9E59A0070FA67 /* GameScene.swift */; };
 		21EC64211AE9E59A0070FA67 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC64201AE9E59A0070FA67 /* GameViewController.swift */; };
 		21EC64241AE9E59A0070FA67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21EC64221AE9E59A0070FA67 /* Main.storyboard */; };
 		21EC64261AE9E59B0070FA67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21EC64251AE9E59B0070FA67 /* Images.xcassets */; };
 		21EC64291AE9E59B0070FA67 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EC64271AE9E59B0070FA67 /* LaunchScreen.xib */; };
 		21EC64351AE9E59B0070FA67 /* Jak_TianoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC64341AE9E59B0070FA67 /* Jak_TianoTests.swift */; };
+		21EC64421AE9E71E0070FA67 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC64401AE9E71E0070FA67 /* CameraController.swift */; };
+		21EC64431AE9E71E0070FA67 /* Utilities2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC64411AE9E71E0070FA67 /* Utilities2D.swift */; };
+		21EC64451AE9E98B0070FA67 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC64441AE9E98B0070FA67 /* MainScene.swift */; };
+		21EC64481AEC3F0C0070FA67 /* PortraitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC64471AEC3F0C0070FA67 /* PortraitButton.swift */; };
+		21EC644B1AEC41C10070FA67 /* jak.png in Resources */ = {isa = PBXBuildFile; fileRef = 21EC644A1AEC41C10070FA67 /* jak.png */; };
+		21EC644D1AED46440070FA67 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC644C1AED46440070FA67 /* Button.swift */; };
+		21EC644F1AED550F0070FA67 /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 21EC644E1AED550F0070FA67 /* crunch.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,10 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21561E1B1AED608B0035E714 /* zoom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = zoom.wav; sourceTree = "<group>"; };
+		21561E1D1AED74EE0035E714 /* MenuOptionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuOptionButton.swift; path = Entities/MenuOptionButton.swift; sourceTree = "<group>"; };
 		21EC64151AE9E59A0070FA67 /* Jak-Tiano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jak-Tiano.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21EC64191AE9E59A0070FA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21EC641A1AE9E59A0070FA67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21EC641E1AE9E59A0070FA67 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		21EC64201AE9E59A0070FA67 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		21EC64231AE9E59A0070FA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21EC64251AE9E59B0070FA67 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -38,6 +47,13 @@
 		21EC642E1AE9E59B0070FA67 /* Jak-TianoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jak-TianoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21EC64331AE9E59B0070FA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21EC64341AE9E59B0070FA67 /* Jak_TianoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jak_TianoTests.swift; sourceTree = "<group>"; };
+		21EC64401AE9E71E0070FA67 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		21EC64411AE9E71E0070FA67 /* Utilities2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities2D.swift; sourceTree = "<group>"; };
+		21EC64441AE9E98B0070FA67 /* MainScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainScene.swift; path = Scenes/MainScene.swift; sourceTree = "<group>"; };
+		21EC64471AEC3F0C0070FA67 /* PortraitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PortraitButton.swift; path = Entities/PortraitButton.swift; sourceTree = "<group>"; };
+		21EC644A1AEC41C10070FA67 /* jak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jak.png; sourceTree = "<group>"; };
+		21EC644C1AED46440070FA67 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Button.swift; path = Entities/Button.swift; sourceTree = "<group>"; };
+		21EC644E1AED550F0070FA67 /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crunch.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +95,11 @@
 		21EC64171AE9E59A0070FA67 /* Jak-Tiano */ = {
 			isa = PBXGroup;
 			children = (
+				21EC64461AEC3E690070FA67 /* Entities */,
 				21EC643E1AE9E63E0070FA67 /* Scenes */,
+				21EC643F1AE9E71E0070FA67 /* Swift Game Utils */,
 				21EC64181AE9E59A0070FA67 /* Supporting Files */,
+				21EC64491AEC419B0070FA67 /* Resources */,
 			);
 			path = "Jak-Tiano";
 			sourceTree = "<group>";
@@ -118,9 +137,38 @@
 		21EC643E1AE9E63E0070FA67 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				21EC641E1AE9E59A0070FA67 /* GameScene.swift */,
+				21EC64441AE9E98B0070FA67 /* MainScene.swift */,
 			);
 			name = Scenes;
+			sourceTree = "<group>";
+		};
+		21EC643F1AE9E71E0070FA67 /* Swift Game Utils */ = {
+			isa = PBXGroup;
+			children = (
+				21EC64401AE9E71E0070FA67 /* CameraController.swift */,
+				21EC64411AE9E71E0070FA67 /* Utilities2D.swift */,
+			);
+			path = "Swift Game Utils";
+			sourceTree = "<group>";
+		};
+		21EC64461AEC3E690070FA67 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				21EC644C1AED46440070FA67 /* Button.swift */,
+				21EC64471AEC3F0C0070FA67 /* PortraitButton.swift */,
+				21561E1D1AED74EE0035E714 /* MenuOptionButton.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		21EC64491AEC419B0070FA67 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				21561E1B1AED608B0035E714 /* zoom.wav */,
+				21EC644E1AED550F0070FA67 /* crunch.wav */,
+				21EC644A1AEC41C10070FA67 /* jak.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +252,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21EC644F1AED550F0070FA67 /* crunch.wav in Resources */,
+				21EC644B1AEC41C10070FA67 /* jak.png in Resources */,
 				21EC64291AE9E59B0070FA67 /* LaunchScreen.xib in Resources */,
+				21561E1C1AED608B0035E714 /* zoom.wav in Resources */,
 				21EC64261AE9E59B0070FA67 /* Images.xcassets in Resources */,
 				21EC64241AE9E59A0070FA67 /* Main.storyboard in Resources */,
 			);
@@ -224,8 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21EC641F1AE9E59A0070FA67 /* GameScene.swift in Sources */,
+				21EC644D1AED46440070FA67 /* Button.swift in Sources */,
+				21EC64481AEC3F0C0070FA67 /* PortraitButton.swift in Sources */,
 				21EC64211AE9E59A0070FA67 /* GameViewController.swift in Sources */,
+				21561E1E1AED74EE0035E714 /* MenuOptionButton.swift in Sources */,
+				21EC64421AE9E71E0070FA67 /* CameraController.swift in Sources */,
+				21EC64431AE9E71E0070FA67 /* Utilities2D.swift in Sources */,
+				21EC64451AE9E98B0070FA67 /* MainScene.swift in Sources */,
 				21EC641B1AE9E59A0070FA67 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +413,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Jak-Tiano/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -368,6 +425,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Jak-Tiano/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -386,6 +444,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Jak-TianoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jak-Tiano.app/Jak-Tiano";
@@ -401,6 +460,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Jak-TianoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jak-Tiano.app/Jak-Tiano";
@@ -426,6 +486,7 @@
 				21EC643A1AE9E59B0070FA67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21EC643B1AE9E59B0070FA67 /* Build configuration list for PBXNativeTarget "Jak-TianoTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +495,7 @@
 				21EC643D1AE9E59B0070FA67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
