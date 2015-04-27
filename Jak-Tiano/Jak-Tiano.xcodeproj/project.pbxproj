@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		21561E1C1AED608B0035E714 /* zoom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 21561E1B1AED608B0035E714 /* zoom.wav */; };
 		21561E1E1AED74EE0035E714 /* MenuOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21561E1D1AED74EE0035E714 /* MenuOptionButton.swift */; };
+		21561E201AED99F70035E714 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21561E1F1AED99F70035E714 /* BackButton.swift */; };
+		21561E221AED9C6B0035E714 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21561E211AED9C6B0035E714 /* back@2x.png */; };
+		21561E2C1AEDA84D0035E714 /* ABOUT ME@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21561E291AEDA84D0035E714 /* ABOUT ME@2x.png */; };
+		21561E2D1AEDA84D0035E714 /* COMPANY@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21561E2A1AEDA84D0035E714 /* COMPANY@2x.png */; };
+		21561E2E1AEDA84D0035E714 /* EDUCATION@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21561E2B1AEDA84D0035E714 /* EDUCATION@2x.png */; };
+		21561E301AEDAA580035E714 /* PROJECTS@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21561E2F1AEDAA580035E714 /* PROJECTS@2x.png */; };
 		21EC641B1AE9E59A0070FA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC641A1AE9E59A0070FA67 /* AppDelegate.swift */; };
 		21EC64211AE9E59A0070FA67 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC64201AE9E59A0070FA67 /* GameViewController.swift */; };
 		21EC64241AE9E59A0070FA67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21EC64221AE9E59A0070FA67 /* Main.storyboard */; };
@@ -37,6 +43,12 @@
 /* Begin PBXFileReference section */
 		21561E1B1AED608B0035E714 /* zoom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = zoom.wav; sourceTree = "<group>"; };
 		21561E1D1AED74EE0035E714 /* MenuOptionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuOptionButton.swift; path = Entities/MenuOptionButton.swift; sourceTree = "<group>"; };
+		21561E1F1AED99F70035E714 /* BackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackButton.swift; path = Entities/BackButton.swift; sourceTree = "<group>"; };
+		21561E211AED9C6B0035E714 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		21561E291AEDA84D0035E714 /* ABOUT ME@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ABOUT ME@2x.png"; sourceTree = "<group>"; };
+		21561E2A1AEDA84D0035E714 /* COMPANY@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "COMPANY@2x.png"; sourceTree = "<group>"; };
+		21561E2B1AEDA84D0035E714 /* EDUCATION@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "EDUCATION@2x.png"; sourceTree = "<group>"; };
+		21561E2F1AEDAA580035E714 /* PROJECTS@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PROJECTS@2x.png"; sourceTree = "<group>"; };
 		21EC64151AE9E59A0070FA67 /* Jak-Tiano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jak-Tiano.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21EC64191AE9E59A0070FA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21EC641A1AE9E59A0070FA67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +169,7 @@
 				21EC644C1AED46440070FA67 /* Button.swift */,
 				21EC64471AEC3F0C0070FA67 /* PortraitButton.swift */,
 				21561E1D1AED74EE0035E714 /* MenuOptionButton.swift */,
+				21561E1F1AED99F70035E714 /* BackButton.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -164,6 +177,11 @@
 		21EC64491AEC419B0070FA67 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				21561E2F1AEDAA580035E714 /* PROJECTS@2x.png */,
+				21561E291AEDA84D0035E714 /* ABOUT ME@2x.png */,
+				21561E2A1AEDA84D0035E714 /* COMPANY@2x.png */,
+				21561E2B1AEDA84D0035E714 /* EDUCATION@2x.png */,
+				21561E211AED9C6B0035E714 /* back@2x.png */,
 				21561E1B1AED608B0035E714 /* zoom.wav */,
 				21EC644E1AED550F0070FA67 /* crunch.wav */,
 				21EC644A1AEC41C10070FA67 /* jak.png */,
@@ -253,9 +271,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				21EC644F1AED550F0070FA67 /* crunch.wav in Resources */,
+				21561E2C1AEDA84D0035E714 /* ABOUT ME@2x.png in Resources */,
+				21561E2D1AEDA84D0035E714 /* COMPANY@2x.png in Resources */,
 				21EC644B1AEC41C10070FA67 /* jak.png in Resources */,
 				21EC64291AE9E59B0070FA67 /* LaunchScreen.xib in Resources */,
+				21561E301AEDAA580035E714 /* PROJECTS@2x.png in Resources */,
+				21561E2E1AEDA84D0035E714 /* EDUCATION@2x.png in Resources */,
 				21561E1C1AED608B0035E714 /* zoom.wav in Resources */,
+				21561E221AED9C6B0035E714 /* back@2x.png in Resources */,
 				21EC64261AE9E59B0070FA67 /* Images.xcassets in Resources */,
 				21EC64241AE9E59A0070FA67 /* Main.storyboard in Resources */,
 			);
@@ -280,6 +303,7 @@
 				21EC64211AE9E59A0070FA67 /* GameViewController.swift in Sources */,
 				21561E1E1AED74EE0035E714 /* MenuOptionButton.swift in Sources */,
 				21EC64421AE9E71E0070FA67 /* CameraController.swift in Sources */,
+				21561E201AED99F70035E714 /* BackButton.swift in Sources */,
 				21EC64431AE9E71E0070FA67 /* Utilities2D.swift in Sources */,
 				21EC64451AE9E98B0070FA67 /* MainScene.swift in Sources */,
 				21EC641B1AE9E59A0070FA67 /* AppDelegate.swift in Sources */,
@@ -416,6 +440,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -428,6 +453,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

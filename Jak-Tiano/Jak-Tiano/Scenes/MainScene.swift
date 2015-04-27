@@ -12,8 +12,10 @@ import SpriteKit
 class MainScene: NHCCamScene {
     
     // nodes
-    let portraitButton = PortraitButton(radius: 80)
+    let label: SKLabelNode = SKLabelNode()
     
+    let portraitButton = PortraitButton(radius: 80)
+    let backButton: BackButton = BackButton()
     var menuButtons: [MenuOptionButton] = [MenuOptionButton]()
     
     // MARK: - Scene transitions
@@ -25,13 +27,26 @@ class MainScene: NHCCamScene {
         backgroundColor = SKColor(white: 0.5, alpha: 1.0)
         
         // set up nodes
+        backButton.screenWidth = size.width
+        backButton.completionHandler = {
+            self.dismissSideMenu()
+        }
+        
         portraitButton.camCon = camCon
         portraitButton.unlockClosure = {
             self.dismissUnlockButton()
         }
         
+        label.horizontalAlignmentMode = .Center
+        label.verticalAlignmentMode = .Center
+        label.text = "tap rapidly"
+        label.fontSize = 16
+        label.position = CGPointMake(0.0, -160)
+        
         // add nodes to camera
         camCon.addCameraChild(portraitButton, withZ: 0)
+        camCon.addCameraChild(label, withZ: -100)
+        camCon.addHUDChild(backButton, withZ: 10)
     }
     
     override func willMoveFromView(view: SKView) {
@@ -114,6 +129,7 @@ class MainScene: NHCCamScene {
     
     func dismissUnlockButton() {
         // remove portrait from scene
+        camCon.removeCameraChildren(label)
         camCon.removeCameraChildren(portraitButton)
         setUpMenuButtons()
         presentMainMenu()
@@ -141,17 +157,27 @@ class MainScene: NHCCamScene {
                 button.select()
             }
         }
+        backButton.present(dir)
     }
     
     func dismissSideMenu() {
+        backButton.dismiss()
+        for b in menuButtons {
+            if b.wasSelected {
+                b.reset()
+            }
+        }
         
+        runAction(SKAction.sequence([SKAction.waitForDuration(0.5), SKAction.runBlock({
+            self.presentMainMenu()
+        })]))
     }
     
     
     // MARK: - Touch events
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        
+        println("touch in \(nodeAtPoint((touches.first as! UITouch).locationInNode(self)).name)")
     }
     
     override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {

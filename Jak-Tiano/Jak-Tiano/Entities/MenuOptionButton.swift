@@ -26,6 +26,7 @@ class MenuOptionButton: Button {
             if let text = buttonName {
                 labelNode.text = text
                 self.name = text
+                menuContents.texture = SKTexture(imageNamed: text)
             }
         }
     }
@@ -34,6 +35,7 @@ class MenuOptionButton: Button {
     let labelNode: SKLabelNode = SKLabelNode()
     let background: SKSpriteNode
     let menuNode: SKSpriteNode
+    let menuContents: SKSpriteNode = SKSpriteNode(imageNamed: "COMPANY")
     
     init (dir: MenuDirection, sceneWidth: CGFloat, sceneHeight: CGFloat) {
         
@@ -65,14 +67,14 @@ class MenuOptionButton: Button {
             menuNode.position = CGPointMake(-sceneWidth, 0.0)
             background.color = SKColor(white: 0.85, alpha: 1.0)
             labelNode.fontColor = SKColor(white: 0.15, alpha: 1.0)
-            labelNode.position = CGPointMake(60, 0)
+            labelNode.position = CGPointMake(50, 0)
             
         case .Right:
             menuNode.color = SKColor(white: 0.15, alpha: 1.0)
             menuNode.position = CGPointMake(sceneWidth, 0.0)
             background.color = SKColor(white: 0.15, alpha: 1.0)
             labelNode.fontColor = SKColor(white: 0.85, alpha: 1.0)
-            labelNode.position = CGPointMake(-60, 0)
+            labelNode.position = CGPointMake(-50, 0)
         }
         
         background.anchorPoint = CGPointMake(0.5, 0.5)
@@ -81,6 +83,7 @@ class MenuOptionButton: Button {
         labelNode.fontSize  = 28
         labelNode.zPosition = 1
         
+        menuNode.addChild(menuContents)
         addChild(menuNode)
         addChild(background)
         addChild(labelNode)
@@ -129,8 +132,17 @@ class MenuOptionButton: Button {
         }
     }
     
-    func select() {
+    func reset() {
         wasSelected = false
+        var xDelta: CGFloat = 0
+        if direction == .Left { xDelta = -60 }
+        else                  { xDelta =  60 }
+        let move = SKAction.moveToX(xDelta, duration: 0.5)
+        move.timingMode = .EaseOut
+        self.runAction(move)
+    }
+    
+    func select() {
         
         let move = SKAction.moveToX(-offScreenAnchor, duration: 0.5)
         move.timingMode = .EaseOut
